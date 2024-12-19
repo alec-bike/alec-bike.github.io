@@ -1,4 +1,5 @@
 site_name: Bike Project
+site_url: https://alec-bike.github.io
 
 theme:
   name: material
