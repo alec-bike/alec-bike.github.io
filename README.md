@@ -3,10 +3,7 @@
 ## Setup
 
 ```zsh
-# install uv
-curl -LsSf https://astral.sh/uv/install.sh | sh
-echo "source $HOME/.cargo/env" >> ~/.zprofile
- 
+# install uv -> https://docs.astral.sh/uv
 # add documentation package
 uv init
 uv add mkdocs-material --dev
