@@ -7,18 +7,15 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 echo "source $HOME/.cargo/env" >> ~/.zprofile
  
-# clone git repo
-git clone git@github.com:alec-bike/alec-bike.github.io
-cd alec-bike.github.io
- 
-# install mkdocs-material documentation package
+# add documentation package
+uv init
 uv add mkdocs-material --dev
  
-# build and start server on localhost:8000
+# build and test locally
 uv run mkdocs build
 uv run mkdocs serve
  
-# deploy to github -> https://alec-bike.github.io
-# note: set `gh-pages` as the Github Pages branch
+# deploy to github
+# set 'gh-pages' as default branch in GitHub Pages
 uv run mkdocs gh-deploy --force
 ```
