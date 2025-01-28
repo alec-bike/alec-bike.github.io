@@ -1,21 +1,29 @@
-site_name: Bike Project
+site_name: The Bike Project
 site_url: https://alec-bike.github.io
 
+nav:
+  - Home: index.md
+
 theme:
-    name: material
-    palette:
-        # toggle for light mode
-        - media: "(prefers-color-scheme: light)"
-          scheme: default
-          toggle:
-              icon: material/brightness-7
-              name: Switch to dark mode
-        # toggle for dark mode
-        - media: "(prefers-color-scheme: dark)"
-          scheme: slate
-          toggle:
-              icon: material/brightness-4
-              name: Switch to light mode
-    features:
-        - navigation.instant
-        - navigation.footer
+  name: material
+  palette:
+    # toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.footer
+
+markdown_extensions:
+  - pymdownx.tilde
+  - attr_list
