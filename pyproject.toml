@@ -1,10 +1,10 @@
 [project]
 name = "alec-bike.github.io"
 version = "0.1.0"
-description = "Electric bike project."
+description = "The Bike Project."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
 
 [dependency-groups]
-dev = ["mdformat-mkdocs>=4.1.2", "mkdocs-material>=9.6.7"]
+dev = ["mdformat-mkdocs>=4.1.2", "mkdocs-material>=9.6.13"]

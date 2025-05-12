@@ -1,3 +1,3 @@
 # Home
 
-Electric bike project.
+The Bike Project.

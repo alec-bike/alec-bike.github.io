@@ -21,13 +21,8 @@ uv run mkdocs gh-deploy --force
 **Run these commands before each commit.**
 
 ```zsh
-# update dependencies
 uv sync
 uv tree --outdated --depth 1
-
-# run markdown lint/format
 uv run mdformat docs
-
-# build documentation
 uv run mkdocs build
 ```
