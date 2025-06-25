@@ -6,7 +6,7 @@ git clone git@github.com:alec-bike/alec-bike.github.io.git
 cd alec-bike.github.io
 
 # add dev dependencies (documentation and lint/format)
-uv add mkdocs-material mdformat-mkdocs --dev
+uv add mkdocs-material mdformat-mkdocs mdformat-footnote --dev
 
 # build documentation and test locally
 uv run mkdocs serve
@@ -16,9 +16,7 @@ uv run mkdocs serve
 uv run mkdocs gh-deploy --force
 ```
 
-# Test
-
-**Run these commands before each commit.**
+# Update
 
 ```zsh
 uv sync

@@ -9,6 +9,7 @@ source = { virtual = "." }
 
 [package.dev-dependencies]
 dev = [
+    { name = "mdformat-footnote" },
     { name = "mdformat-mkdocs" },
     { name = "mkdocs-material" },
 ]
@@ -17,8 +18,9 @@ dev = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "mdformat-mkdocs", specifier = ">=4.1.2" },
-    { name = "mkdocs-material", specifier = ">=9.6.13" },
+    { name = "mdformat-footnote", specifier = ">=0.1.1" },
+    { name = "mdformat-mkdocs", specifier = ">=4.3.0" },
+    { name = "mkdocs-material", specifier = ">=9.6.14" },
 ]
 
 [[package]]
@@ -192,6 +194,19 @@ wheels = [
 ]
 
 [[package]]
+name = "mdformat-footnote"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mdformat" },
+    { name = "mdit-py-plugins" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f6/90/7f4b2729af8d691a57518e8202e90c3a638714437b5e753662982f744cb5/mdformat_footnote-0.1.1.tar.gz", hash = "sha256:3b85c4c84119f15f0b651df89c99a4f6f119fc46dca6b33f7edf4f09655d1126", size = 5224, upload-time = "2022-02-16T09:17:58.647Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/93/aa/4736dc47867c60236a9992f2f779e85e5331e65e648434d6362c3ed2dae0/mdformat_footnote-0.1.1-py3-none-any.whl", hash = "sha256:30063aaa0f74c36257c2e80fa0cf00d7c71a5277f27e98109e8765ae8678a95b", size = 4120, upload-time = "2022-02-16T09:17:53.63Z" },
+]
+
+[[package]]
 name = "mdformat-gfm"
 version = "0.4.1"
 source = { registry = "https://pypi.org/simple" }
@@ -208,7 +223,7 @@ wheels = [
 
 [[package]]
 name = "mdformat-mkdocs"
-version = "4.1.2"
+version = "4.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "mdformat" },
@@ -216,9 +231,9 @@ dependencies = [
     { name = "mdit-py-plugins" },
     { name = "more-itertools" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/de/9a/9c855818820345c814d008f118e4dd35a7159a84bc74f78dbd8be62a5fd0/mdformat_mkdocs-4.1.2.tar.gz", hash = "sha256:85017aa4cd6bcff68ca1c11a232bceef33fa7bfa181996f9c5004876af960de6", size = 26422, upload-time = "2025-01-24T01:34:34.73Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1b/85/735e11fe6a410c5005b4fb06bc2c75df56cbbcea84ad6dc101e5edae67f9/mdformat_mkdocs-4.3.0.tar.gz", hash = "sha256:d4d9b381d13900a373c1673bd72175a28d712e5ec3d9688d09e66ab4174c493c", size = 27996, upload-time = "2025-05-31T02:15:21.208Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/62/30/bad67c7b47b3806b415fcc9fba607e6d369706e931afdfa3815cdfff7586/mdformat_mkdocs-4.1.2-py3-none-any.whl", hash = "sha256:330774b40d27dc34ac56d216617968a7889de6adfb8641c510fb11d43ca257cf", size = 28608, upload-time = "2025-01-24T01:34:32.901Z" },
+    { url = "https://files.pythonhosted.org/packages/dc/25/cd4edbe9e5f96048999afbd42d0c030c66c2d45f2119002e7de208e6d43a/mdformat_mkdocs-4.3.0-py3-none-any.whl", hash = "sha256:13e9512b9461c9af982c3b9e1640791d38b0835549e5f8a7ee641926feae4d58", size = 31422, upload-time = "2025-05-31T02:15:20.182Z" },
 ]
 
 [[package]]
@@ -304,7 +319,7 @@ wheels = [
 
 [[package]]
 name = "mkdocs-material"
-version = "9.6.13"
+version = "9.6.14"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "babel" },
@@ -319,9 +334,9 @@ dependencies = [
     { name = "pymdown-extensions" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2c/7d/fbf31a796feb2a796194b587153c5fa9e722720e9d3e338168402dde73ed/mkdocs_material-9.6.13.tar.gz", hash = "sha256:7bde7ebf33cfd687c1c86c08ed8f6470d9a5ba737bd89e7b3e5d9f94f8c72c16", size = 3951723, upload-time = "2025-05-10T06:35:21.847Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b3/fa/0101de32af88f87cf5cc23ad5f2e2030d00995f74e616306513431b8ab4b/mkdocs_material-9.6.14.tar.gz", hash = "sha256:39d795e90dce6b531387c255bd07e866e027828b7346d3eba5ac3de265053754", size = 3951707, upload-time = "2025-05-13T13:27:57.173Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a5/b7/98a10ad7b6efb7a10cae1f804ada856875637566d23b538855cd43757d71/mkdocs_material-9.6.13-py3-none-any.whl", hash = "sha256:3730730314e065f422cc04eacbc8c6084530de90f4654a1482472283a38e30d3", size = 8703765, upload-time = "2025-05-10T06:35:18.945Z" },
+    { url = "https://files.pythonhosted.org/packages/3a/a1/7fdb959ad592e013c01558822fd3c22931a95a0f08cf0a7c36da13a5b2b5/mkdocs_material-9.6.14-py3-none-any.whl", hash = "sha256:3b9cee6d3688551bf7a8e8f41afda97a3c39a12f0325436d76c86706114b721b", size = 8703767, upload-time = "2025-05-13T13:27:54.089Z" },
 ]
 
 [[package]]

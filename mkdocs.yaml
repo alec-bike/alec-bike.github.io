@@ -25,5 +25,6 @@ theme:
     - navigation.footer
 
 markdown_extensions:
-  - pymdownx.tilde
   - attr_list
+  - footnotes
+  - pymdownx.tilde
