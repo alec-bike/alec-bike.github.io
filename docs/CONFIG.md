@@ -88,16 +88,16 @@ roots = ["Cargo.toml", "Cargo.lock"]
 [[language]]
 name = "cpp"
 language-servers = ["clangd"]
-auto-format = false
+auto-format = true
 formatter = { command = "clang-format" }
-file-types = ["cpp","hpp","ino"]
+file-types = ["cpp", "hpp", "ino"]
 
 [[language]]
 name = "c"
 language-servers = ["clangd"]
-auto-format = false
+auto-format = true
 formatter = { command = "clang-format" }
-file-types = ["c","h"]
+file-types = ["c", "h"]
 
 [[language]]
 name = "markdown"
