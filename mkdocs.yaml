@@ -6,6 +6,9 @@ nav:
 
 theme:
   name: material
+  font:
+    text: Cairo
+    code: Cairo Mono
   palette:
     # toggle for light mode
     - media: "(prefers-color-scheme: light)"

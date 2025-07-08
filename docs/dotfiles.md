@@ -1,4 +1,4 @@
-# Config Files
+# macOS config
 
 ## zsh
 

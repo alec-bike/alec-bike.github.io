@@ -1,4 +1,11 @@
+.zed
+.venv
+.pytest_cache
+.ruff_cache
+.coverage
 .DS_Store
 .obsidian
-.venv
+__pycache__
+typings
 site
+dist
