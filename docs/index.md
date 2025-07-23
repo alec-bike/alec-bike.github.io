@@ -1,3 +1,3 @@
 # Home
 
-A high-speed electric cargo bike designed for long commutes.
+A high-speed electric cargo bike refined for long commutes.

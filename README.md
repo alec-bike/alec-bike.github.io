@@ -1,6 +1,6 @@
 # The Bike Project
 
-A high-speed electric cargo bike designed for long commutes.
+A high-speed electric cargo bike refined for long commutes.
 
 See [alec-bike.github.io](https://alec-bike.github.io) for details.
 
@@ -29,7 +29,7 @@ uv run mkdocs build -s
 
 Deploy to Github Pages:
 
-> [!TIP]
+> [!important]
 > Ensure 'gh-pages' is set as default branch in GitHub Pages.
 
 ```zsh
