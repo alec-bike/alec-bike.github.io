@@ -6,15 +6,17 @@ requires-python = ">=3.13"
 name = "alec-bike-github-io"
 version = "0.1.0"
 source = { virtual = "." }
-dependencies = [
-    { name = "mdformat-footnote" },
+
+[package.dev-dependencies]
+dev = [
     { name = "mdformat-mkdocs" },
     { name = "mkdocs-material" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "mdformat-footnote", specifier = ">=0.1.1" },
+
+[package.metadata.requires-dev]
+dev = [
     { name = "mdformat-mkdocs", specifier = ">=4.3.0" },
     { name = "mkdocs-material", specifier = ">=9.6.15" },
 ]
@@ -187,19 +189,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/58/62/d4b37c7cd45da0302b63d95489d137d8dcb8ded1d0c59aaaf48c4ab6020d/mdformat-0.7.21.tar.gz", hash = "sha256:ed81bfab711751d8ce4bf6a7854aeb02a3fdd165be751d4f672e0d949ae54dd9", size = 33991, upload-time = "2024-12-19T20:38:12.505Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/26/77/f57ef8676f6066c0f649f9508e20f7d67d547afc6d66c7aaeed64b12a962/mdformat-0.7.21-py3-none-any.whl", hash = "sha256:74b9e2bdb5ec1e766babece2b5148958ab268e54b6f4f360a3c4e75e68637149", size = 33740, upload-time = "2024-12-19T20:38:09.685Z" },
-]
-
-[[package]]
-name = "mdformat-footnote"
-version = "0.1.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "mdformat" },
-    { name = "mdit-py-plugins" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/f6/90/7f4b2729af8d691a57518e8202e90c3a638714437b5e753662982f744cb5/mdformat_footnote-0.1.1.tar.gz", hash = "sha256:3b85c4c84119f15f0b651df89c99a4f6f119fc46dca6b33f7edf4f09655d1126", size = 5224, upload-time = "2022-02-16T09:17:58.647Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/aa/4736dc47867c60236a9992f2f779e85e5331e65e648434d6362c3ed2dae0/mdformat_footnote-0.1.1-py3-none-any.whl", hash = "sha256:30063aaa0f74c36257c2e80fa0cf00d7c71a5277f27e98109e8765ae8678a95b", size = 4120, upload-time = "2022-02-16T09:17:53.63Z" },
 ]
 
 [[package]]
