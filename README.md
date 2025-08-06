@@ -16,14 +16,14 @@ cd alec-bike.github.io
 Build documentation and test locally:
 
 ```zsh
-uv run mdformat docs
+mdformat docs
 uv run mkdocs serve
 ```
 
 Check that everything builds and the formatting is ok:
 
 ```zsh
-uv run mdformat docs --check
+mdformat docs --check
 uv run mkdocs build -s
 ```
 
