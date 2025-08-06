@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/hukkin/mdformat
+    rev: 0.7.22
+    hooks:
+      - id: mdformat
+        args: [--check]
+        additional_dependencies:
+          - mdformat-footnote
+          - mdformat-mkdocs
+
+  - repo: local
+    hooks:
+      - id: mkdocs-build
+        name: mkdocs build
+        entry: mkdocs build -s
+        language: system
+        files: ^(mkdocs.yaml|docs/)
+        pass_filenames: false

@@ -8,30 +8,32 @@ See [alec-bike.github.io](https://alec-bike.github.io) for details.
 
 Clone repository:
 
-```zsh
+```sh
 git clone git@github.com:alec-bike/alec-bike.github.io.git
 cd alec-bike.github.io
 ```
 
-Build documentation and test locally:
+> [!tip]
+> Ensure pre-commit, mdformat and mkdocs are setup as system tools.
 
-```zsh
-mdformat docs
-uv run mkdocs serve
+Install pre-commit hooks:
+
+```sh
+pre-commit install
 ```
 
-Check that everything builds and the formatting is ok:
+Preview website:
 
-```zsh
+```sh
 mdformat docs --check
-uv run mkdocs build -s
+mkdocs serve -o
 ```
 
 Deploy to Github Pages:
 
-> [!important]
+> [!tip]
 > Ensure 'gh-pages' is set as default branch in GitHub Pages.
 
-```zsh
-uv run mkdocs gh-deploy --force
+```sh
+mkdocs gh-deploy --force
 ```
