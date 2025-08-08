@@ -12,7 +12,7 @@ repos:
     hooks:
       - id: mkdocs-build
         name: mkdocs build
-        entry: mkdocs build -s
+        entry: .venv/bin/mkdocs build -s
         language: system
         files: ^(mkdocs.yaml|docs/)
         pass_filenames: false

@@ -13,8 +13,14 @@ git clone git@github.com:alec-bike/alec-bike.github.io.git
 cd alec-bike.github.io
 ```
 
+Sync local dependencies:
+
+```sh
+uv sync
+```
+
 > [!tip]
-> Ensure pre-commit, mdformat and mkdocs are setup as system tools.
+> Ensure pre-commit and mdformat are setup as system tools.
 
 Install pre-commit hooks:
 
@@ -22,18 +28,18 @@ Install pre-commit hooks:
 pre-commit install
 ```
 
-Preview website:
+Preview the documentation site:
 
 ```sh
-mdformat docs --check
-mkdocs serve -o
+mdformat docs
+uv run mkdocs serve -o
 ```
 
 Deploy to Github Pages:
 
-> [!tip]
+> [!important]
 > Ensure 'gh-pages' is set as default branch in GitHub Pages.
 
 ```sh
-mkdocs gh-deploy --force
+uv run mkdocs gh-deploy --force
 ```
