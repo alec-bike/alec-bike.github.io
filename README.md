@@ -1,8 +1,6 @@
 # The Bike Project
 
-A high-speed electric cargo bike refined for long commutes.
-
-See [alec-bike.github.io](https://alec-bike.github.io) for details.
+A high-speed electric cargo bike refined for long commutes. See [alec-bike.github.io](https://alec-bike.github.io) for details.
 
 ## Install
 
