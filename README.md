@@ -23,14 +23,13 @@ uv sync
 Install pre-commit hooks:
 
 ```sh
-pre-commit install
+prek install
 ```
 
 Preview the documentation site:
 
 ```sh
-mdformat docs
-uv run mkdocs serve -o
+uv run mkdocs serve
 ```
 
 Deploy to Github Pages:
