@@ -1,3 +1,3 @@
-# Home
+# The Bike Project
 
-A high-speed electric cargo bike refined for long commutes.
+A high-speed electric cargo bike optimized for long commutes.
