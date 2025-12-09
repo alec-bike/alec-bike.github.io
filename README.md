@@ -1,6 +1,6 @@
 # The Bike Project
 
-A high-speed electric cargo bike optimized for long commutes. See [alec-bike.github.io](https://alec-bike.github.io) for details.
+A high-speed electric cargo bike optimized for long commutes. See [alec-bike.github.io][1] for details.
 
 ## Install
 
@@ -18,7 +18,7 @@ uv sync
 ```
 
 > [!tip]
-> Ensure pre-commit and mdformat are setup as system tools.
+> Ensure [prek][2] and [mdformat][3] are setup as system tools.
 
 Install pre-commit hooks:
 
@@ -40,3 +40,7 @@ Deploy to Github Pages:
 ```sh
 uv run mkdocs gh-deploy --force
 ```
+
+[1]: https://alec-bike.github.io
+[2]: https://github.com/j178/prek
+[3]: https://github.com/hukkin/mdformat
