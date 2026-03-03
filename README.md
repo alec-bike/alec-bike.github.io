@@ -1,6 +1,6 @@
 # The Bike Project
 
-A high-speed electric cargo bike optimized for long commutes. See [alec-bike.github.io][1] for details.
+A high-speed cargo bike optimized for long commutes. See [alec-bike.github.io][1] for details.
 
 ## Install
 
@@ -11,24 +11,33 @@ git clone git@github.com:alec-bike/alec-bike.github.io.git
 cd alec-bike.github.io
 ```
 
+> [!TIP]
+> This repository uses uv to manage dependencies. See [Installing uv][2] for setup instructions.
+
 Sync local dependencies:
 
 ```sh
 uv sync
 ```
 
-> [!tip]
-> Ensure [prek][2] and [mdformat][3] are setup as system tools.
+Install prek and mdformat:
 
-Install pre-commit hooks:
+```sh
+uv tool install prek
+uv tool install mdformat -w mdformat-footnote -w mdformat-gfm
+```
+
+Setup and test pre-commit hooks:
 
 ```sh
 prek install
+prek run -a
 ```
 
-Preview the documentation site:
+Build and preview documentation:
 
 ```sh
+uv run mkdocs build
 uv run mkdocs serve
 ```
 
@@ -42,5 +51,4 @@ uv run mkdocs gh-deploy --force
 ```
 
 [1]: https://alec-bike.github.io
-[2]: https://github.com/j178/prek
-[3]: https://github.com/hukkin/mdformat
+[2]: https://docs.astral.sh/uv/getting-started/installation/
