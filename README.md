@@ -2,7 +2,7 @@
 
 A high-speed cargo bike optimized for long commutes. See [alec-bike.github.io][1] for details.
 
-## Install
+## Installation
 
 Clone repository:
 
@@ -20,7 +20,7 @@ Build and preview documentation:
 mdbook build -o
 ```
 
-Deploy to Github Pages is setup as a GitHub workflow and will run automatically.
+Deploy to Github Pages is setup by the `mdbook.yaml` workflow and will run automatically.
 
 > [!NOTE]
 > Ensure 'gh-pages' is set as default branch in GitHub Pages.

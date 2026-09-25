@@ -2,7 +2,7 @@
 authors = ["Alec Robertson"]
 language = "en"
 src = "docs"
-title = "Bike Control Library"
+title = "The Bike Project"
 
 [build]
 build-dir = "book"
