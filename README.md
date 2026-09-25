@@ -20,14 +20,10 @@ Build and preview documentation:
 mdbook build -o
 ```
 
-Deploy to Github Pages:
+Deploy to Github Pages is setup as a GitHub workflow and will run automatically.
 
 > [!NOTE]
 > Ensure 'gh-pages' is set as default branch in GitHub Pages.
-
-```sh
-uv run mkdocs gh-deploy --force
-```
 
 [1]: https://alec-bike.github.io
 [2]: https://rust-lang.github.io/mdBook/guide/installation.html
