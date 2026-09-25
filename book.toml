@@ -1,0 +1,12 @@
+[book]
+authors = ["Alec Robertson"]
+language = "en"
+src = "docs"
+title = "Bike Control Library"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output]
+html.print.enable = false
