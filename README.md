@@ -1,6 +1,6 @@
 # The Bike Project
 
-A high-speed cargo bike optimized for long commutes. See [alec-bike.github.io][1] for details.
+Documentation repository for The Bike Project.
 
 ## Installation
 
@@ -12,7 +12,7 @@ cd alec-bike.github.io
 ```
 
 > [!TIP]
-> This repository uses mdbook for documentation. See [mdbook][2] for setup instructions.
+> This repository uses mdbook for documentation. See [mdbook][1] for setup instructions.
 
 Build and preview documentation:
 
@@ -20,10 +20,10 @@ Build and preview documentation:
 mdbook build -o
 ```
 
-Deploy to Github Pages is setup by the `mdbook.yaml` workflow and will run automatically.
+Deployment to Github Pages is done by the `mdbook.yaml` workflow. Documentation is published to [alec-bike.github.io][2].
 
 > [!NOTE]
 > Ensure 'gh-pages' is set as default branch in GitHub Pages.
 
-[1]: https://alec-bike.github.io
-[2]: https://rust-lang.github.io/mdBook/guide/installation.html
+[1]: https://rust-lang.github.io/mdBook/guide/installation.html
+[2]: https://alec-bike.github.io
